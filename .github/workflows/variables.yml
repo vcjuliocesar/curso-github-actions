@@ -1,10 +1,12 @@
 name: Saludo usando variables
 run-name: ¡Estoy aprendiendo a usar Variables!
+
 on:
   workflow_dispatch
 env:
   DIA_DE_SEMANA: Lunes
   NOMBRE: ${{vars.NOMBRE}}
+
 jobs:
   saludo-variables:
     runs-on: ubuntu-latest
