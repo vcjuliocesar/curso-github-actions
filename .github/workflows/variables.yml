@@ -4,7 +4,7 @@ on:
   workflow_dispatch
 env:
   DIA_DE_SEMANA: Lunes
-  NOMBRE: ${{env.NOMBRE}}
+  NOMBRE: ${{vars.NOMBRE}}
 jobs:
   saludo-variables:
     runs-on: ubuntu-latest
