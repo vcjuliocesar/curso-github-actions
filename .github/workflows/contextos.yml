@@ -1,0 +1,15 @@
+name: Contexto
+run-name: ¡Estoy aprendiendo a usar Contextos!
+on: push
+jobs:
+  check-main:
+    if: ${{github.ref == 'refs/heads/main'}}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Desplegando en la rama $GITHUB_REF"
+      
+  check-aprendiendo-github-actions:
+    if: ${{github.ref == 'refs/heads/aprendiendo-github-actions'}}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Desplegando en la rama $GITHUB_REF"
